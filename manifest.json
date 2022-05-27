@@ -1,0 +1,38 @@
+{
+  "name": "Team Dog: Twitch Canvas Helper",
+  "description": "Apes together strong",
+  "homepage_url": "https://discord.gg/daniel",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Team Dog: Twitch Canvas Helper"
+  },
+  "icons": { "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png" },
+  "content_scripts": [
+    {
+      "run_at" : "document_idle",
+      "js": ["after.js"],
+      "matches": [
+        "https://*.ext-twitch.tv/*"
+      ],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["inject.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
