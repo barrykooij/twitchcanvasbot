@@ -1,11 +1,11 @@
 {
-  "name": "Team Dog: Twitch Canvas Helper",
+  "name": "Twitch Canvas Helper",
   "description": "Apes together strong",
-  "homepage_url": "https://discord.gg/daniel",
+  "homepage_url": "",
   "version": "1.0.0",
   "manifest_version": 3,
   "action": {
-    "default_title": "Team Dog: Twitch Canvas Helper"
+    "default_title": "Twitch Canvas Helper"
   },
   "icons": { "16": "logo.png",
     "48": "logo.png",
